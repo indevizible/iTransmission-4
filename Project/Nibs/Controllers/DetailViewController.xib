@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
@@ -61,12 +62,13 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="1">
-            <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="4">
                     <rect key="frame" x="0.0" y="20" width="320" height="352"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <animations/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="19"/>
@@ -74,10 +76,11 @@
                     </connections>
                 </tableView>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="21">
             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
@@ -89,6 +92,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ubuntu-10.04.1-desktop-amd64.iso" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="10" id="24" customClass="ClipboardLabel">
                         <rect key="frame" x="86" y="10" width="220" height="60"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" white="0.25403225810000002" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="highlightedColor" white="0.54435483870000001" alpha="1" colorSpace="calibratedWhite"/>
@@ -98,9 +102,12 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="25">
                         <rect key="frame" x="13" y="12" width="60" height="54"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                     </imageView>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="30">
@@ -113,6 +120,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total" lineBreakMode="tailTruncation" minimumFontSize="10" id="32">
                         <rect key="frame" x="10" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,12 +128,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="37" customClass="ClipboardLabel">
                         <rect key="frame" x="220" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="39">
@@ -138,6 +149,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Completed" lineBreakMode="tailTruncation" minimumFontSize="10" id="41">
                         <rect key="frame" x="10" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -145,12 +157,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="40" customClass="ClipboardLabel">
                         <rect key="frame" x="220" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="44">
@@ -163,6 +178,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Progress" lineBreakMode="tailTruncation" minimumFontSize="10" id="46">
                         <rect key="frame" x="10" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -170,12 +186,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="47" customClass="ClipboardLabel">
                         <rect key="frame" x="220" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="48">
@@ -188,6 +207,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uploaded" lineBreakMode="tailTruncation" minimumFontSize="10" id="50">
                         <rect key="frame" x="10" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -195,12 +215,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="49" customClass="ClipboardLabel">
                         <rect key="frame" x="220" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="52">
@@ -213,6 +236,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Downloaded" lineBreakMode="tailTruncation" minimumFontSize="10" id="54">
                         <rect key="frame" x="10" y="10" width="96" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -220,12 +244,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="55" customClass="ClipboardLabel">
                         <rect key="frame" x="220" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="93">
@@ -238,6 +265,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ratio" lineBreakMode="tailTruncation" minimumFontSize="10" id="95">
                         <rect key="frame" x="10" y="10" width="96" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -245,12 +273,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="94" customClass="ClipboardLabel">
                         <rect key="frame" x="220" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="72">
@@ -263,6 +294,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="State" lineBreakMode="tailTruncation" minimumFontSize="10" id="74">
                         <rect key="frame" x="10" y="10" width="96" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -270,12 +302,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="73" customClass="ClipboardLabel">
                         <rect key="frame" x="146" y="10" width="164" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="78" customClass="FlexibleLabelCell">
@@ -288,6 +323,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Error" lineBreakMode="tailTruncation" minimumFontSize="10" id="80">
                         <rect key="frame" x="10" y="10" width="85" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -295,12 +331,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="81" customClass="ClipboardLabel">
                         <rect key="frame" x="103" y="10" width="207" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="flexibleLabel" destination="81" id="161"/>
@@ -316,6 +355,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hash" lineBreakMode="tailTruncation" minimumFontSize="10" id="84">
                         <rect key="frame" x="10" y="10" width="77" height="38"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -323,12 +363,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0f0e71fc80c6839409d32aaeacad485e91b2ff7c" lineBreakMode="characterWrap" numberOfLines="2" minimumFontSize="10" id="85" customClass="ClipboardLabel">
                         <rect key="frame" x="110" y="-1" width="200" height="58"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="101" customClass="FlexibleLabelCell">
@@ -341,6 +384,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Data" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" id="104">
                         <rect key="frame" x="10" y="0.0" width="77" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -348,12 +392,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0f0e71fc80c6839409d32aaeacad485e91b2ff7c" lineBreakMode="characterWrap" numberOfLines="0" minimumFontSize="10" id="102" customClass="ClipboardLabel">
                         <rect key="frame" x="110" y="-1" width="200" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="flexibleLabel" destination="102" id="105"/>
@@ -369,6 +416,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Torrent" lineBreakMode="tailTruncation" minimumFontSize="10" id="109">
                         <rect key="frame" x="10" y="0.0" width="77" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -376,12 +424,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Torrent location" lineBreakMode="characterWrap" numberOfLines="0" minimumFontSize="10" id="111" customClass="ClipboardLabel">
                         <rect key="frame" x="110" y="-1" width="200" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="flexibleLabel" destination="111" id="117"/>
@@ -397,6 +448,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Comment" lineBreakMode="tailTruncation" minimumFontSize="10" id="131">
                         <rect key="frame" x="10" y="0.0" width="77" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -404,12 +456,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Torrent location" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="130" customClass="ClipboardLabel">
                         <rect key="frame" x="130" y="-1" width="180" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="flexibleLabel" destination="130" id="132"/>
@@ -425,6 +480,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Upload" lineBreakMode="tailTruncation" minimumFontSize="10" id="120">
                         <rect key="frame" x="10" y="10" width="96" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -432,12 +488,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="121" customClass="ClipboardLabel">
                         <rect key="frame" x="220" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="165">
@@ -450,6 +509,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Average Upload" lineBreakMode="tailTruncation" minimumFontSize="10" id="167">
                         <rect key="frame" x="10" y="10" width="123" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -457,12 +517,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="166" customClass="ClipboardLabel">
                         <rect key="frame" x="220" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="122">
@@ -475,6 +538,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Download" lineBreakMode="tailTruncation" minimumFontSize="10" id="124">
                         <rect key="frame" x="10" y="10" width="96" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -482,12 +546,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="123" customClass="ClipboardLabel">
                         <rect key="frame" x="220" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="168" userLabel="Table View Cell">
@@ -500,6 +567,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Average Download" lineBreakMode="tailTruncation" minimumFontSize="10" id="169">
                         <rect key="frame" x="10" y="10" width="145" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -507,12 +575,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="170" customClass="ClipboardLabel">
                         <rect key="frame" x="220" y="10" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="135">
@@ -525,6 +596,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Created On" lineBreakMode="tailTruncation" minimumFontSize="10" id="136">
                         <rect key="frame" x="10" y="10" width="96" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -532,12 +604,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="137" customClass="ClipboardLabel">
                         <rect key="frame" x="114" y="10" width="196" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="140">
@@ -550,6 +625,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Creator" lineBreakMode="tailTruncation" minimumFontSize="10" id="142">
                         <rect key="frame" x="10" y="10" width="96" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -557,12 +633,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.3GB" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="141" customClass="ClipboardLabel">
                         <rect key="frame" x="114" y="10" width="196" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="154">
@@ -575,19 +654,23 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Private" lineBreakMode="tailTruncation" minimumFontSize="10" id="156">
                         <rect key="frame" x="10" y="10" width="96" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                     <switch opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="157">
-                        <rect key="frame" x="223" y="8" width="79" height="27"/>
+                        <rect key="frame" x="251" y="6" width="51" height="31"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <accessibility key="accessibilityConfiguration">
-                            <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                            <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
                         </accessibility>
                     </switch>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="YrC-mW-PuC" customClass="FlexibleLabelCell">
@@ -600,6 +683,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Magnet" lineBreakMode="tailTruncation" minimumFontSize="10" id="HJq-pf-pMx">
                         <rect key="frame" x="10" y="0.0" width="77" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -607,12 +691,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Magnet" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="Qsz-qD-8Fa" customClass="ClipboardLabel">
                         <rect key="frame" x="142" y="11" width="158" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="flexibleLabel" destination="Qsz-qD-8Fa" id="KsQ-PF-idK"/>
@@ -628,6 +715,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Activity" lineBreakMode="tailTruncation" minimumFontSize="10" id="uD5-zc-KiQ">
                         <rect key="frame" x="10" y="0.0" width="77" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -635,12 +723,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Activity" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="yjn-p9-Z0S" customClass="ClipboardLabel">
                         <rect key="frame" x="210" y="11" width="90" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="flexibleLabel" destination="yjn-p9-Z0S" id="w7Y-oe-eHO"/>
@@ -656,6 +747,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Seeders" lineBreakMode="tailTruncation" minimumFontSize="10" id="hrr-EW-wYW">
                         <rect key="frame" x="10" y="10" width="96" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -663,12 +755,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="45 of 100 connected" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="ebq-gQ-EJJ" customClass="ClipboardLabel">
                         <rect key="frame" x="114" y="10" width="196" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="y6p-0A-Sbn">
@@ -681,6 +776,7 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Peers" lineBreakMode="tailTruncation" minimumFontSize="10" id="ZfH-yG-9zg">
                         <rect key="frame" x="10" y="10" width="96" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -688,12 +784,15 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="45 of 100 connected" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="2xL-9F-wLh" customClass="ClipboardLabel">
                         <rect key="frame" x="114" y="10" width="196" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
     </objects>

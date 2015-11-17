@@ -22,11 +22,13 @@
 #import "PDColoredProgressView.h"
 #import "BandwidthController.h"
 #import "InfoViewController.h"
+#import "NetworkController.h"
 
 #define ADD_TAG 1000
 #define ADD_FROM_URL_TAG 1001
 #define ADD_FROM_MAGNET_TAG 1002
 #define REMOVE_COMFIRM_TAG 1003
+#define STOP_FTP_TAG 1004
 
 @implementation TorrentViewController
 
@@ -38,11 +40,13 @@
 @synthesize editToolbarItems;
 @synthesize doneButton;
 @synthesize infoButton;
+@synthesize ftpToggleButton;
 @synthesize selectedIndexPaths;
 @synthesize activityItem;
 @synthesize audio;
 @synthesize recorder;
 @synthesize pref;
+@synthesize ftpServer;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
@@ -233,6 +237,76 @@
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
+- (void)toggleFTP:(UIBarButtonItem *)sender
+{
+
+    NSString *localWifiIPAddress = [ NetworkController localWifiIPAddress ];												// Changed by RD on 12/2/11 because the 4.3 simulator seems to pause a long time on [ NetworkController localIPAddress]
+    
+    if ([localWifiIPAddress isEqualToString:@"error"]) {
+        NSString *alertTitle = @"Error";
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle
+                                                        message:@"Connect Wifi before connect to FTP Server"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }else{
+        NSString *alertTitle = [NSString stringWithFormat:@"Connect to port 21\nftp://%@", localWifiIPAddress];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle
+                                                        message:@"The FTP Server has been enabled, please use FTP client software to transfer any import/export data to or from this device. Press the \"Stop FTP Server\" button once all data transfers have been completed."
+                                                       delegate:self
+                                              cancelButtonTitle:@"Stop FTP Server"
+                                              otherButtonTitles:nil];
+        alert.tag = STOP_FTP_TAG;
+        [alert show];
+        
+        ftpServer = [[FtpServer alloc] initWithPort:21 withDir:[self documentsDirectory] notifyObject:self];
+        
+    }
+        
+   
+}
+
+-(void)stopFTPServer
+{
+    [ftpServer stopFtpServer];
+    ftpServer = nil;
+}
+
+-(void)didReceiveFileListChanged
+// ----------------------------------------------------------------------------------------------------------
+{
+    NSLog(@"didReceiveFileListChanged");
+}
+
+
+- (NSString*)documentsDirectory
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    return documentsDirectory;
+    
+    // I want iTunes backup & restore features.
+    //    NSError *error = nil;
+    //#if TARGET_IPHONE_SIMULATOR
+    //    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    //    NSString *documentsDirectory = [paths objectAtIndex:0];
+    //    return documentsDirectory;
+    //#else
+    //    NSString *documentsDirectoryOutsideSandbox = @"/var/mobile/iTransmission/";
+    //    if ([[NSFileManager defaultManager] createDirectoryAtPath:documentsDirectoryOutsideSandbox withIntermediateDirectories:YES attributes:nil error:&error]) {
+    //        return documentsDirectoryOutsideSandbox;
+    //    }
+    //    else {
+    //        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    //        NSString *documentsDirectory = [paths objectAtIndex:0];
+    //        return documentsDirectory;
+    //    }
+    //#endif
+}
+
 - (void)prefButtonClicked:(id)sender
 {
     PrefViewController *prefViewController = [[PrefViewController alloc] initWithNibName:@"PrefViewController" bundle:nil];
@@ -298,7 +372,9 @@
 	UIButton *_infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
 	[_infoButton addTarget:self action:@selector(infoButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
 	self.infoButton = [[UIBarButtonItem alloc] initWithCustomView:_infoButton];
+    self.ftpToggleButton = [[UIBarButtonItem alloc] initWithTitle:@"Start FTP" style:UIBarButtonItemStylePlain target:self action:@selector(toggleFTP:)];
 	self.navigationItem.rightBarButtonItem = self.infoButton;
+    self.navigationItem.leftBarButtonItem = self.ftpToggleButton;
 	
 	self.doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneButtonClicked:)];
 	
@@ -560,6 +636,9 @@
             if (error)
                 [self addFromMagnetWithExistingMagnet:magnet message:[error localizedDescription]];
         }
+    }
+    if (alertView.tag == STOP_FTP_TAG) {
+        [self stopFTPServer];
     }
 }
 

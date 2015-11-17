@@ -227,8 +227,14 @@
 		898124A518884D2900DB955B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		898124A618884D2900DB955B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74861F521259DB06005FDE74 /* QuartzCore.framework */; };
 		898124A718884D2900DB955B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7437B171125B4B6500B456EF /* SystemConfiguration.framework */; };
-		89E7ABF618DA02E700EB5349 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89E7ABF518DA02E700EB5349 /* Default-568h@2x.png */; };
 		900255311BFB0BEA00111B41 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 900255301BFB0BEA00111B41 /* Launch Screen.storyboard */; };
+		9002555E1BFB2E9600111B41 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9002554E1BFB2E9600111B41 /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9002555F1BFB2E9600111B41 /* FtpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 900255501BFB2E9600111B41 /* FtpConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		900255601BFB2E9600111B41 /* FtpDataConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 900255521BFB2E9600111B41 /* FtpDataConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		900255611BFB2E9600111B41 /* FtpServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 900255551BFB2E9600111B41 /* FtpServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		900255641BFB2E9600111B41 /* list.m in Sources */ = {isa = PBXBuildFile; fileRef = 9002555B1BFB2E9600111B41 /* list.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		900255651BFB2E9600111B41 /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9002555D1BFB2E9600111B41 /* NetworkController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		900255671BFB387500111B41 /* ftp_commands.plist in Resources */ = {isa = PBXBuildFile; fileRef = 900255661BFB387500111B41 /* ftp_commands.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -504,10 +510,25 @@
 		895A750618D9CF9B00561CD6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		895A750818D9D4EF00561CD6 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		898124BA18884D2900DB955B /* iTransmission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTransmission.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		89E7ABF518DA02E700EB5349 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		89F9EE8618381627001A2A4D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		89F9EE8818381630001A2A4D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		900255301BFB0BEA00111B41 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		9002554D1BFB2E9600111B41 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		9002554E1BFB2E9600111B41 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		9002554F1BFB2E9600111B41 /* FtpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpConnection.h; sourceTree = "<group>"; };
+		900255501BFB2E9600111B41 /* FtpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FtpConnection.m; sourceTree = "<group>"; };
+		900255511BFB2E9600111B41 /* FtpDataConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpDataConnection.h; sourceTree = "<group>"; };
+		900255521BFB2E9600111B41 /* FtpDataConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FtpDataConnection.m; sourceTree = "<group>"; };
+		900255531BFB2E9600111B41 /* FtpDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpDefines.h; sourceTree = "<group>"; };
+		900255541BFB2E9600111B41 /* FtpServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpServer.h; sourceTree = "<group>"; };
+		900255551BFB2E9600111B41 /* FtpServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FtpServer.m; sourceTree = "<group>"; };
+		900255581BFB2E9600111B41 /* iphoneLibTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphoneLibTestViewController.h; sourceTree = "<group>"; };
+		900255591BFB2E9600111B41 /* iphoneLibTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iphoneLibTestViewController.m; sourceTree = "<group>"; };
+		9002555A1BFB2E9600111B41 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		9002555B1BFB2E9600111B41 /* list.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = list.m; sourceTree = "<group>"; };
+		9002555C1BFB2E9600111B41 /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
+		9002555D1BFB2E9600111B41 /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
+		900255661BFB387500111B41 /* ftp_commands.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ftp_commands.plist; sourceTree = "<group>"; };
 		ACE6CA48189DBE2200444349 /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -539,7 +560,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				89E7ABF518DA02E700EB5349 /* Default-568h@2x.png */,
 				895A74E318D9CB8900561CD6 /* Nibs */,
 				895A74DD18D9CB8500561CD6 /* Other Sources */,
 				895A73C518D9CB7D00561CD6 /* Resources */,
@@ -569,6 +589,7 @@
 		895A730618D9CB6E00561CD6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9002554C1BFB2E9600111B41 /* FTP Server */,
 				895A730718D9CB6E00561CD6 /* ALAlertBanner */,
 				895A730D18D9CB6E00561CD6 /* Cells */,
 				895A732318D9CB6E00561CD6 /* ColoredProgress */,
@@ -818,6 +839,7 @@
 		895A73C518D9CB7D00561CD6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				900255661BFB387500111B41 /* ftp_commands.plist */,
 				895A73CE18D9CB7D00561CD6 /* Info */,
 				895A740418D9CB7E00561CD6 /* Photo Components */,
 				895A741F18D9CB7E00561CD6 /* Regex */,
@@ -1123,6 +1145,28 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		9002554C1BFB2E9600111B41 /* FTP Server */ = {
+			isa = PBXGroup;
+			children = (
+				9002554D1BFB2E9600111B41 /* AsyncSocket.h */,
+				9002554E1BFB2E9600111B41 /* AsyncSocket.m */,
+				9002554F1BFB2E9600111B41 /* FtpConnection.h */,
+				900255501BFB2E9600111B41 /* FtpConnection.m */,
+				900255511BFB2E9600111B41 /* FtpDataConnection.h */,
+				900255521BFB2E9600111B41 /* FtpDataConnection.m */,
+				900255531BFB2E9600111B41 /* FtpDefines.h */,
+				900255541BFB2E9600111B41 /* FtpServer.h */,
+				900255551BFB2E9600111B41 /* FtpServer.m */,
+				900255581BFB2E9600111B41 /* iphoneLibTestViewController.h */,
+				900255591BFB2E9600111B41 /* iphoneLibTestViewController.m */,
+				9002555A1BFB2E9600111B41 /* list.h */,
+				9002555B1BFB2E9600111B41 /* list.m */,
+				9002555C1BFB2E9600111B41 /* NetworkController.h */,
+				9002555D1BFB2E9600111B41 /* NetworkController.m */,
+			);
+			path = "FTP Server";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1254,6 +1298,7 @@
 				895A74A218D9CB7E00561CD6 /* grayArrow.png in Resources */,
 				895A74AC18D9CB7E00561CD6 /* magnet_ex in Resources */,
 				895A746A18D9CB7E00561CD6 /* 2starsborder.png in Resources */,
+				900255671BFB387500111B41 /* ftp_commands.plist in Resources */,
 				895A74A618D9CB7E00561CD6 /* play_icon-ios7@2x.png in Resources */,
 				895A749E18D9CB7E00561CD6 /* FavIcon.png in Resources */,
 				895A74C318D9CB7E00561CD6 /* iphone_chrome.png in Resources */,
@@ -1307,7 +1352,6 @@
 				895A74FD18D9CB8A00561CD6 /* FileListViewController.xib in Resources */,
 				895A746118D9CB7E00561CD6 /* about.html in Resources */,
 				895A74FF18D9CB8A00561CD6 /* PrefViewController_iPad.xib in Resources */,
-				89E7ABF618DA02E700EB5349 /* Default-568h@2x.png in Resources */,
 				895A74CA18D9CB7E00561CD6 /* index.html in Resources */,
 				895A746318D9CB7E00561CD6 /* style.css in Resources */,
 				895A748518D9CB7E00561CD6 /* itunes.png in Resources */,
@@ -1384,6 +1428,7 @@
 				895A739F18D9CB6F00561CD6 /* TrackersViewController.m in Sources */,
 				895A738A18D9CB6F00561CD6 /* ALAlertBanner.m in Sources */,
 				895A73BB18D9CB6F00561CD6 /* SVWebViewController.m in Sources */,
+				900255611BFB2E9600111B41 /* FtpServer.m in Sources */,
 				895A739E18D9CB6F00561CD6 /* TorrentViewController.m in Sources */,
 				895A73A018D9CB6F00561CD6 /* DDASLLogger.m in Sources */,
 				895A739918D9CB6F00561CD6 /* DetailViewController.m in Sources */,
@@ -1397,7 +1442,10 @@
 				895A73AD18D9CB6F00561CD6 /* PortChecker.m in Sources */,
 				895A738B18D9CB6F00561CD6 /* ALAlertBannerManager.m in Sources */,
 				895A738E18D9CB6F00561CD6 /* FlexibleLabelCell.m in Sources */,
+				9002555F1BFB2E9600111B41 /* FtpConnection.m in Sources */,
 				895A739018D9CB6F00561CD6 /* NSDictionaryAdditions.m in Sources */,
+				9002555E1BFB2E9600111B41 /* AsyncSocket.m in Sources */,
+				900255651BFB2E9600111B41 /* NetworkController.m in Sources */,
 				895A739118D9CB6F00561CD6 /* NSString+RelativePath.m in Sources */,
 				895A73BE18D9CB6F00561CD6 /* SVWebViewControllerActivityChrome.m in Sources */,
 				895A73AF18D9CB6F00561CD6 /* TorrentFetcher.m in Sources */,
@@ -1413,6 +1461,7 @@
 				895A73C418D9CB6F00561CD6 /* SVWebViewControllerActivity.m in Sources */,
 				895A738C18D9CB6F00561CD6 /* DiscoveredTorrentCell.m in Sources */,
 				895A73B918D9CB6F00561CD6 /* SVModalWebViewController.m in Sources */,
+				900255641BFB2E9600111B41 /* list.m in Sources */,
 				895A73B418D9CB6F00561CD6 /* CheckboxControl.m in Sources */,
 				895A73B618D9CB6F00561CD6 /* ControlButton.m in Sources */,
 				895A739618D9CB6F00561CD6 /* PDColoredProgressView.m in Sources */,
@@ -1420,6 +1469,7 @@
 				895A739718D9CB6F00561CD6 /* BandwidthController.m in Sources */,
 				895A73B318D9CB6F00561CD6 /* StatisticsView.m in Sources */,
 				895A73B518D9CB6F00561CD6 /* ClipboardLabel.m in Sources */,
+				900255601BFB2E9600111B41 /* FtpDataConnection.m in Sources */,
 				895A73C218D9CB6F00561CD6 /* SVWebViewControllerActivitySafari.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

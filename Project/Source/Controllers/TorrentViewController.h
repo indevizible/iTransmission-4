@@ -11,6 +11,7 @@
 #import "ALAlertBanner.h"
 #import "SVWebViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "FtpServer.h"
 
 @class Controller;
 @class TDBadgeView;
@@ -30,11 +31,13 @@
 @property (nonatomic, retain) UIBarButtonItem *editButton;
 @property (nonatomic, retain) UIBarButtonItem *doneButton;
 @property (nonatomic, retain) UIBarButtonItem *infoButton;
+@property (nonatomic, retain) UIBarButtonItem *ftpToggleButton;
 @property (nonatomic, retain) UIBarButtonItem *activityItem;
 @property (nonatomic, retain) NSMutableArray *selectedIndexPaths;
 @property (nonatomic, retain) AVAudioPlayer *audio;
 @property (nonatomic, retain) AVAudioRecorder *recorder;
 @property (nonatomic, retain) PrefViewController *pref;
+@property (nonatomic, retain) FtpServer *ftpServer;
 
 - (void)addButtonClicked:(id)sender;
 - (void)prefButtonClicked:(id)sender;

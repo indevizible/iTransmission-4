@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,23 +24,36 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iTransmission" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
-                                <rect key="frame" x="20" y="180" width="560" height="43"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="PlainIcon" translatesAutoresizingMaskIntoConstraints="NO" id="FzT-aE-HBl">
+                                <rect key="frame" x="262" y="262" width="76" height="76"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="5Fj-qq-K0H"/>
+                                    <constraint firstAttribute="height" constant="76" id="FVc-uY-3ER"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iTransmission" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNj-Ue-hTo">
+                                <rect key="frame" x="240" y="346" width="121" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="DSI-s6-TTe"/>
+                                    <constraint firstAttribute="height" constant="21" id="eoD-wJ-QTG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.83921568629999999" green="0.29803921570000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="eNj-Ue-hTo" firstAttribute="top" secondItem="FzT-aE-HBl" secondAttribute="bottom" constant="8" id="3Ix-V1-FJA"/>
                             <constraint firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
-                            <constraint firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="Q3B-4B-g5h"/>
+                            <constraint firstItem="eNj-Ue-hTo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Gm2-X1-jiA"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="1/3" constant="1" id="moa-c2-u7t"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="x7j-FC-K8j"/>
+                            <constraint firstItem="FzT-aE-HBl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uhL-9f-epz"/>
+                            <constraint firstItem="FzT-aE-HBl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zMg-oQ-qEu"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -50,4 +62,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PlainIcon" width="76" height="76"/>
+    </resources>
+    <color key="tintColor" red="0.83921568627450982" green="0.29803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
 </document>
