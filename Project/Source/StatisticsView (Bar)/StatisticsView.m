@@ -59,10 +59,10 @@
     [self.controller updateGlobalSpeed];
 	[fDLSpeedLabel setText:[NSString stringForSpeed:[self.controller globalDownloadSpeed]]];
 	[fULSpeedLabel setText:[NSString stringForSpeed:[self.controller globalUploadSpeed]]];
-	if ([self.controller isSessionActive]) 
-		[fStatusIndicator setImage:[UIImage imageNamed:@"GreenDot.png"]];
+	if ([self.controller isSessionActive])
+		[fStatusIndicator setImage:[UIImage imageNamed:@"GreenDot"]];
 	else 
-		[fStatusIndicator setImage:[UIImage imageNamed:@"YellowDot.png"]];
+		[fStatusIndicator setImage:[UIImage imageNamed:@"YellowDot"]];
 }
 
 - (void)dealloc {
