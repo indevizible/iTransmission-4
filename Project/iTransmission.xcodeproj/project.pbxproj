@@ -1610,7 +1610,7 @@
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = "\"Libraries/include/${CURRENT_ARCH}\"/**";
 				INFOPLIST_FILE = "Other Sources/iTransmission-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_DEPENDENCY_INFO_FILE = "";
 				LIBRARY_SEARCH_PATHS = "Libraries/lib/**";
 				ONLY_ACTIVE_ARCH = NO;
@@ -1658,7 +1658,7 @@
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = "\"Libraries/include/${CURRENT_ARCH}\"/**";
 				INFOPLIST_FILE = "Other Sources/iTransmission-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_DEPENDENCY_INFO_FILE = "";
 				LIBRARY_SEARCH_PATHS = "Libraries/lib/**";
 				ONLY_ACTIVE_ARCH = NO;
@@ -1707,7 +1707,7 @@
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = "\"Libraries/include/${CURRENT_ARCH}\"/**";
 				INFOPLIST_FILE = "Other Sources/iTransmission-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_DEPENDENCY_INFO_FILE = "";
 				LIBRARY_SEARCH_PATHS = "Libraries/lib/**";
 				ONLY_ACTIVE_ARCH = NO;
