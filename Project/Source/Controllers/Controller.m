@@ -107,8 +107,22 @@ static void signal_handler(int sig) {
     
     [self fixDocumentsDirectory];
 	[self transmissionInitialize];
+    [self registerNotifications];
 
     return YES;
+}
+
+-(void) registerNotifications {
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+    {
+        UIUserNotificationType types = UIUserNotificationTypeBadge |
+        UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+        
+        UIUserNotificationSettings *mySettings =
+        [UIUserNotificationSettings settingsForTypes:types categories:nil];
+        
+        [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
+    }
 }
 
 -(void) openApp {
